@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation"
 
 export default async function page({
     params,
@@ -5,6 +6,9 @@ export default async function page({
     params: Promise<{ productId: string, reviewId: string }>
 }) {
     const { productId, reviewId } = await params
+    if (parseInt(reviewId) > 1000) {
+        notFound()
+    }
     return (
         <div>
             <h1>
