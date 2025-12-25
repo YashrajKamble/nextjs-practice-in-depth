@@ -1,4 +1,6 @@
-import React from 'react'
+export const metadata = {
+    title: 'about metadata in about section instead of root layout section',
+}
 
 const About = () => {
     return (
