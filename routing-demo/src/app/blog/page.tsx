@@ -4,10 +4,14 @@ export const metadata = {
     },
 }
 
-const Blog = () => {
+export default async function Blog() {
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Intentionally Delay")
+        }, 2000);
+    })
     return (
         <div>My Blog</div>
     )
 }
 
-export default Blog
