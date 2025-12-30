@@ -5,13 +5,16 @@ export default function ComplexDashBoardLayout({
     users,
     revenue,
     notifications,
+    login
 }: {
     children: React.ReactNode,
     users: React.ReactNode,
     revenue: React.ReactNode,
     notifications: React.ReactNode,
+    login: React.ReactNode,
 }) {
-    return (
+    const Login = true;
+    return Login ? (
         <div>
             <div>{children}</div>
 
@@ -25,5 +28,7 @@ export default function ComplexDashBoardLayout({
                 </div>
             </div>
         </div>
+    ) : (
+        login
     )
 }
