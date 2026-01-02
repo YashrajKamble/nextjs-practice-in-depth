@@ -41,3 +41,4 @@ multiple root layouts section - 01:00:25 to 01:03:44 not included
 rendering -03:18:55 to 03:20:14 not included
 Client Side Rendering -03:20:15 to 03:23:27 not included
 Server Side Rendering - 03:23:28 to 03:28:16 not included
+Suspense SSR - 03:28:17 to 03:34:43 not included
