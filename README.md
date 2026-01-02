@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 reference link -https://youtu.be/k7o9R6eaSes?si=spCTbFuzp5e7cO8o
 
 multiple root layouts section - 01:00:25 to 01:03:44 not included
+rendering -03:18:55 to 03:20:14 not included
