@@ -44,3 +44,4 @@ Server Side Rendering - 03:23:28 to 03:28:16 not included
 Suspense SSR - 03:28:17 to 03:34:43 not included
 React Server Component (RSC) - 03:34:44 to 03:41:14 not included
 Rendering Life Cycle in RSCs - 03:47:44 to 03:50:56 not included
+Static Rendering - 03:50:57 to 04:02:03 not included
