@@ -9,6 +9,7 @@ type User = {
     email: string,
     phone: string
 }
+
 export default function UserClient() {
     const [users, setUsers] = useState<User[]>([]);
     const [loading, setLoading] = useState(true);
