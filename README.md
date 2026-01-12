@@ -46,4 +46,4 @@ React Server Component (RSC) - 03:34:44 to 03:41:14 not included
 Rendering Life Cycle in RSCs - 03:47:44 to 03:50:56 not included
 server and client composition patterns - 04:18:26 to 04:19:27 not included
 
-Fetching from a database - 05:15:20 to 05:21:46 code added but not working, need to bug fixing
+Fetching from a database - 05:15:20 to 05:21:46 code added but not working, need to bug fixing - bug fixed successfully
