@@ -8,6 +8,8 @@ type Product = {
     description: string | null;
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProductsDBPage() {
     const products: Product[] = await getProducts();
 

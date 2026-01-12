@@ -21,7 +21,14 @@ export default function CreateProduct() {
                 body: JSON.stringify({ title, price, description }),
             });
             if (response.ok) {
+                setTitle("");
+                setPrice("");
+                setDescription("");
                 router.push("/products-db");
+                router.refresh();
+            } else {
+                const errorData = await response.json();
+                console.error("Error:", errorData);
             }
         } catch (error) {
             console.error("Error:", error);
@@ -38,6 +45,7 @@ export default function CreateProduct() {
                     type="text"
                     className="block w-full p-2 text-black border rounded"
                     name="title"
+                    value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
             </label>
@@ -47,6 +55,7 @@ export default function CreateProduct() {
                     type="number"
                     className="block w-full p-2 text-black border rounded"
                     name="price"
+                    value={price}
                     onChange={(e) => setPrice(e.target.value)}
                 />
             </label>
@@ -55,6 +64,7 @@ export default function CreateProduct() {
                 <textarea
                     className="block w-full p-2 text-black border rounded"
                     name="description"
+                    value={description}
                     onChange={(e) => setDescription(e.target.value)}
                 />
             </label>
