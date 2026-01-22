@@ -25,6 +25,7 @@ seedProducts();
 
 export async function getProducts(query?: string) {
   await new Promise((resolve) => setTimeout(resolve, 1500));
+  
   if (query) {
     return prisma.product.findMany({
       where: {
@@ -48,7 +49,7 @@ export async function getProduct(id: number) {
 export async function addProduct(
   title: string,
   price: number,
-  description: string
+  description: string,
 ) {
   await new Promise((resolve) => setTimeout(resolve, 1500));
   return prisma.product.create({
@@ -60,7 +61,7 @@ export async function updateProduct(
   id: number,
   title: string,
   price: number,
-  description: string
+  description: string,
 ) {
   await new Promise((resolve) => setTimeout(resolve, 1500));
   return prisma.product.update({
